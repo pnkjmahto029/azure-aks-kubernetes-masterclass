@@ -41,6 +41,9 @@ az aks get-credentials --resource-group <Resource-Group-Name> --name <Cluster-Na
 # Replace Resource Group & Cluster Name
 az aks get-credentials --resource-group aks-rg1 --name aksdemo1
 
+# Run below command for powershell in window to get credentials 
+ az aks get-credentials --admin --name aksdemo1 --resource-group aks-rg1
+ 
 # List Kubernetes Worker Nodes
 kubectl get nodes 
 kubectl get nodes -o wide
